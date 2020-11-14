@@ -13,13 +13,15 @@
   display: grid;
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
-  -ms-grid-rows: (150px)[3];
-      grid-template-rows: repeat(3, 150px);
   gap: 10px 20px;
+  -ms-grid-rows: (minmax(150px, min-content))[3];
+      grid-template-rows: repeat(3, minmax(150px, -webkit-min-content));
+      grid-template-rows: repeat(3, minmax(150px, min-content));
 }
 
 .wrapper header {
   background-color: #4488d4;
+  padding: 10px;
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
   -ms-grid-column: 3;
@@ -29,6 +31,7 @@
 
 .wrapper nav {
   background-color: #e7cc32;
+  padding: 10px;
   -ms-grid-row: 1;
   -ms-grid-row-span: 2;
   -ms-grid-column: 1;
@@ -38,18 +41,22 @@
 
 .wrapper main {
   background-color: #ee7d2b;
+  padding: 10px;
 }
 
 .wrapper aside {
   background-color: #48d04c;
+  padding: 10px;
 }
 
 .wrapper section {
   background-color: #d83030;
+  padding: 10px;
 }
 
 .wrapper footer {
   background-color: #4d30e9;
+  padding: 10px;
 }
 
 .wrapper-grid-area {
@@ -60,8 +67,6 @@
   display: grid;
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
-  -ms-grid-rows: (150px)[3];
-      grid-template-rows: repeat(3, 150px);
   gap: 10px 20px;
   margin-top: 20px;
       grid-template-areas: "header header header" "nav main main" "aside main main" "section section footer";

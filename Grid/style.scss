@@ -9,10 +9,12 @@
 
 .wrapper {
   @include wrapper-parent;
+  grid-template-rows: repeat(3, minmax(150px, min-content));
 
   @each $key, $value in $wrapper-child-bg-color {
     #{$key} {
       background-color: $value;
+      padding: 10px;
       //postioning header in place of footer
       @if $key == "header" {
         grid-area: 2 / 3 / 3 / 4;
