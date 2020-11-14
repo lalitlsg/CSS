@@ -13,6 +13,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 150px 150px;
+  gap: 10px 20px;
 
   @each $key, $value in $wrapper-child-bg-color {
     #{$key} {
