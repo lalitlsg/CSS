@@ -43,3 +43,17 @@
     }
   }
 }
+
+.wrapper-imp-exp {
+  @include wrapper-parent;
+  margin-top: 20px;
+  grid-template-rows: repeat(2, minmax(150px, min-content));
+  grid-auto-rows: minmax(150px, auto);
+  grid-auto-flow: row;
+  grid-auto-columns: 1fr;
+  @each $key, $value in $wrapper-child-bg-color {
+    #{$key} {
+      background-color: $value;
+    }
+  }
+}
