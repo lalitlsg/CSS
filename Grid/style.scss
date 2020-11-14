@@ -1,0 +1,22 @@
+@import "_variables";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  background-color: $wrapper-bg-color;
+  margin: 10px;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 150px 150px;
+
+  @each $key, $value in $wrapper-child-bg-color {
+    #{$key} {
+      background-color: $value;
+    }
+  }
+}

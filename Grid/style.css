@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.wrapper {
+  background-color: #efbcf6;
+  margin: 10px;
+  padding: 10px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: 150px 150px;
+      grid-template-rows: 150px 150px;
+}
+
+.wrapper header {
+  background-color: #4488d4;
+}
+
+.wrapper nav {
+  background-color: #e7cc32;
+}
+
+.wrapper main {
+  background-color: #ee7d2b;
+}
+
+.wrapper aside {
+  background-color: #48d04c;
+}
+
+.wrapper section {
+  background-color: #d83030;
+}
+
+.wrapper footer {
+  background-color: #4d30e9;
+}
+/*# sourceMappingURL=style.css.map */
