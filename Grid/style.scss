@@ -18,6 +18,9 @@
   @each $key, $value in $wrapper-child-bg-color {
     #{$key} {
       background-color: $value;
+      @if $key == "header" {
+        grid-area: 2 / 3 / 3 / 4;
+      }
     }
   }
 }
