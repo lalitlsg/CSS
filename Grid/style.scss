@@ -34,7 +34,8 @@
     "nav main main"
     "aside main main"
     "section section footer";
-  grid-template-rows: repeat(4, 150px);
+  grid-template-rows: repeat(4, minmax(150px, min-content));
+  grid-auto-rows: minmax(150px, auto);
 
   @each $key, $value in $wrapper-child-bg-color {
     #{$key} {

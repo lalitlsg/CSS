@@ -70,8 +70,10 @@
   gap: 10px 20px;
   margin-top: 20px;
       grid-template-areas: "header header header" "nav main main" "aside main main" "section section footer";
-  -ms-grid-rows: (150px)[4];
-      grid-template-rows: repeat(4, 150px);
+  -ms-grid-rows: (minmax(150px, min-content))[4];
+      grid-template-rows: repeat(4, minmax(150px, -webkit-min-content));
+      grid-template-rows: repeat(4, minmax(150px, min-content));
+  grid-auto-rows: minmax(150px, auto);
 }
 
 .wrapper-grid-area header {

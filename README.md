@@ -19,7 +19,7 @@ Flexbox
     > justify-content : Align Content horizontally
     > align-items : Align Items vertically
 
-    When, flex-direction : row    -> -----------------main axis     justify-content works horizontally
+    When, flex-direction : row    -> -----------------main axis     justify-content works hortizontally
                                            |                        align-content works vertically
                                            |                        (works only when there is wrapped items
                                            |                         to 2nd or 3rd row or so on...)
