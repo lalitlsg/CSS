@@ -9,11 +9,42 @@
         #mydiv {
             border: 1px solid black;
             width: 500px;
-            margin: 0 auto;
+            margin: 0 auto; 
+        }
+
+        /* making height responsive/according to content */
+        /* fix height will overflow content  */
+        /* to avoid this use min-height  */
+        #res-height{
+            margin-top: 10px;
+            /* height: 100px; */
+            min-height: 100px;
+            width: 40%;
+            border: 1px solid black;
+        }
+
+        /* making div responsive, min-width & max-width  */
+        #resp-image {
+            margin-top: 10px;
+            padding: 5px;
+            border: 1px solid black;
+            /* min-width: 400px; */
+            max-width: 600px;
+        }
+        img {
+            width: 100%;
         }
     </style>
 </head>
 <body>
-    <div id="mydiv">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab illo maxime dolor vitae veritatis, nisi molestiae ad itaque quam ullam reprehenderit, inventore necessitatibus consequuntur error quas amet, nemo culpa! Natus, corrupti earum similique aperiam molestiae alias quidem delectus quasi maxime eum ullam rem eos doloribus repudiandae iure, excepturi ea. Tenetur?</div>
+    <!-- <div id="mydiv">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab illo maxime dolor vitae veritatis, nisi molestiae ad itaque quam ullam reprehenderit, inventore necessitatibus consequuntur error quas amet, nemo culpa! Natus, corrupti earum similique aperiam molestiae alias quidem delectus quasi maxime eum ullam rem eos doloribus repudiandae iure, excepturi ea. Tenetur?</div>
+    <div id="res-height">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis earum ab natus error quis, alias nemo obcaecati ducimus iure aliquam! Laudantium iusto reprehenderit blanditiis quis tempora, earum asperiores fugiat perspiciatis ex minus quam explicabo ab labore qui illo, unde, voluptatem illum modi? Natus debitis sequi adipisci, doloribus qui molestias. Enim dolore ullam accusamus ducimus labore quidem odit temporibus asperiores cumque magni dolor amet unde, consequuntur voluptatibus assumenda laborum ad cum magnam vitae nostrum quae quod maxime quaerat. Perferendis, quos! Harum, commodi. Aperiam omnis voluptate aut? Suscipit molestiae cumque, doloribus beatae nostrum eos ducimus sunt, laboriosam accusamus nihil, delectus nulla in?
+    </div> -->
+    <div id="resp-image">
+        <img src="acting.jpg" alt="acting" />
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur odio nisi consectetur a, dolorum expedita repellat labore illo doloremque, id cum ipsum molestias architecto minus tempora dolorem rem reiciendis at ullam, possimus accusantium maxime aspernatur magnam culpa? Numquam soluta minus accusamus consectetur iusto, est neque tempora accusantium distinctio laudantium. Quos, expedita harum itaque voluptas eius culpa, quisquam in totam animi debitis neque reiciendis corporis deleniti dolorem ducimus, minima accusantium a? Incidunt libero atque in ipsam, repudiandae officiis quidem asperiores doloribus. Vitae accusamus numquam doloribus iure reprehenderit necessitatibus asperiores non praesentium, officia ipsa exercitationem tempora dicta molestiae repellendus nostrum excepturi commodi!
+        </p>
+    </div>
 </body>
 </html>
